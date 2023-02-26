@@ -7,13 +7,67 @@
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./index.css" />
-
     <title>filter</title>
+    <style>
+      ul {
+        list-style: none;
+        width: 525px;
+      }
+      .tags {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        flex-wrap: wrap;
+        border: 1px solid burlywood;
+        padding: 100px;
+      }
+      .tags__button {
+        background-color: bisque;
+        border: 1px solid orange;
+        height: 35px;
+      }
+      .center__div {
+        display: flex;
+        justify-content: center;
+      }
+      .tags__btn--active {
+        background-color: coral;
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <section class="center__div">
+      <ul class="tags js-tags">
+        <li class="tags__item">
+          <button class="tags__button" data-value="html">#html</button>
+        </li>
+        <li class="tags__item">
+          <button class="tags__button" data-value="css">#css</button>
+        </li>
+        <li class="tags__item">
+          <button class="tags__button" data-value="javascript">
+            #javascript
+          </button>
+        </li>
+        <li class="tags__item">
+          <button class="tags__button" data-value="npm">#npm</button>
+        </li>
+        <li class="tags__item">
+          <button class="tags__button" data-value="webpack">#webpack</button>
+        </li>
+        <li class="tags__item">
+          <button class="tags__button" data-value="react">#react</button>
+        </li>
+        <li class="tags__item">
+          <button class="tags__button" data-value="redux">#redux</button>
+        </li>
+        <li class="tags__item">
+          <button class="tags__button" data-value="nodejs">#nodejs</button>
+        </li>
+      </ul>
+    </section>
+    <script type="module" src="./index.js"></script>
+  </body>
 </html>
